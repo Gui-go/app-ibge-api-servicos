@@ -1,0 +1,197 @@
+.App {
+  text-align: center;
+  /* background: url("./images/background.jpg") no-repeat fixed bottom;
+  z-index: -3; */
+}
+
+.navbar {
+  background-color: #b0dfff;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 1px #222;
+  z-index: 3;
+  box-shadow: 10px 10px 10px rgb(54, 54, 54);
+}
+
+.navbar-brand .navbar-nav .nav-link {
+  color: white;
+}
+
+/* .jumbo {
+  background: url('./images/cloud-cover.jpg') no-repeat fixed bottom;
+  background-size: cover;
+  color: #efefef;
+  height: 260px;
+  position: relative;
+  z-index: 2;
+} */
+
+.overlay {
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.nav-icon {
+  float: right;
+  color: black;
+  margin-top: 5px;
+  margin-right: 13px;
+}
+
+.home-icon {
+  margin-top: 22px;
+}
+
+#treediv {
+  height: 800px;
+  width: 800px;
+  border-style: dashed;
+}
+
+#vortx-logo {
+  height: 44px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /* grid-auto-rows: minmax(150px, auto); */
+  gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.grid-container-row {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-auto-rows: 1fr 1fr 1fr;
+  height: 560px;
+}
+
+.dot {
+  height: 95px;
+  width: 95px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 50%;
+  border: 10px #b0dfff outset;
+}
+
+.label-name {
+  font-size: 130px;
+}
+
+.radar-plot {
+  height: 600px;
+}
+
+.art-cont {
+  padding: 30px;
+}
+
+.art-img {
+  height: 260px;
+  width: auto;
+  box-shadow: 10px 10px 10px 10px #222;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .2s;
+  /* Animation */
+}
+
+.art-img:hover {
+  transform: scale(1.04);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.art-info {
+  height: 260px;
+  color: inherit;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  box-shadow: 10px 10px 10px 10px #222;
+  /* display: grid; */
+  display: grid;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .2s;
+  /* Animation */
+}
+
+.art-info:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.04);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.footer {
+  background-color: #b0dfff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px 10px #222;
+  z-index: 30;
+  box-shadow: 10px 10px 10px 10px rgb(54, 54, 54);
+}
+
+.leaflet-container {
+  padding: 0;
+  margin: 0;
+  height: 600px;
+  width: 100%;
+  border: solid;
+  box-shadow: 10px 10px 10px 10px rgb(54, 54, 54);
+}
+
+.about-img {
+  height: 460px;
+  width: auto;
+  box-shadow: 10px 10px 10px 10px #222;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .2s;
+  /* Animation */
+}
+
+.about-img:hover {
+  transform: scale(1.04);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.about-info {
+  height: 460px;
+  color: inherit;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  box-shadow: 10px 10px 10px 10px #222;
+  display: grid;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .2s;
+  /* Animation */
+}
+
+.about-info:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.04);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.arial{
+  font-family: sans-serif;
+  font-weight: bold;
+}

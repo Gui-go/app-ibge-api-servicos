@@ -25,6 +25,7 @@ export const Navigation = () => (
                     <NavItem><NavLink href="/places">Places</NavLink></NavItem>
                     <NavItem><NavLink href="/micro">Micro</NavLink></NavItem>
                     <NavItem><NavLink href="/meso">Meso</NavLink></NavItem>
+                    <NavItem><NavLink href="/namestat">NameStat</NavLink></NavItem>
                     <NavItem><NavLink href="/about">About</NavLink></NavItem>
                 </Nav>
                 <Nav className="ml-auto">

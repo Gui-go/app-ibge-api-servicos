@@ -44,7 +44,7 @@ def req_mun(uf):
 @app.route('/namestat/<nome>') # Route to get the name stats
 def req_namestat(nome):
     try:
-        return get_namestat(nome).to_json()
+        return jsonify(get_namestat(nome))
     except:
         return jsonify({'Error': 'Something wrong with the api call'})
 

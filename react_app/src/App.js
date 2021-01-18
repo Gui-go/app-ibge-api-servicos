@@ -9,6 +9,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Micro from './components/Micro'
 import Meso from './components/Meso'
+import NameStat from './components/NameStat'
 import Footer from "./components/Footer";
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path='/home' component={Home} />
             <Route path='/micro' component={Micro} />
             <Route path='/meso' component={Meso} />
+            <Route path='/namestat' component={NameStat} />
             <Route exact path='/about' component={About} />
             <Redirect from='*' to='/' />
           </Switch>

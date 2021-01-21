@@ -14,18 +14,17 @@ export const Navigation = () => (
     <div>
         <ReactTooltip className="tooltip" />
         <Navbar className="navbar" expand="lg">
-            <NavbarBrand href="/">Guigo's portfolio </NavbarBrand>
+            <NavbarBrand href="/">Guigo's APP </NavbarBrand>
             <NavbarToggle aria-controls="basic-navbar-nav" />
             <NavbarCollapse id="basic-navbar-nav">
                 <Nav> {/*className="ml-auto"*/}
                     {/* <NavItem><NavLink href="/">Home</NavLink></NavItem> */}
                     <NavItem><NavLink href="/home">Home</NavLink></NavItem>
-                    <NavItem><NavLink href="/skills">Skills</NavLink></NavItem>
-                    <NavItem><NavLink href="/articles">Articles</NavLink></NavItem>
-                    <NavItem><NavLink href="/places">Places</NavLink></NavItem>
                     <NavItem><NavLink href="/micro">Micro</NavLink></NavItem>
                     <NavItem><NavLink href="/meso">Meso</NavLink></NavItem>
                     <NavItem><NavLink href="/namestat">NameStat</NavLink></NavItem>
+                    <NavItem><NavLink href="/malha">Malha</NavLink></NavItem>
+                    <NavItem><NavLink href="/mapa">Mapa</NavLink></NavItem>
                     <NavItem><NavLink href="/about">About</NavLink></NavItem>
                 </Nav>
                 <Nav className="ml-auto">

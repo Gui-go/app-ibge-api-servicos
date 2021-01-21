@@ -8,19 +8,11 @@ export default class Home extends React.Component {
                 <br />
                 <br />
                 <br />
-                <h1>Home</h1>
                 <br />
                 <br />
+                <h1>Bem vindo à Aplicação de testes da API de serviços do IBGE</h1>
                 <br />
-                <h1>Home</h1>
-                <br />
-                <br />
-                <br />
-                <h1>Home</h1>
-                <br />
-                <br />
-                <br />
-                <h1>Home</h1>
+                <h3>Bora testar alguns serviços do IBGE</h3>
             </div>
 
         )

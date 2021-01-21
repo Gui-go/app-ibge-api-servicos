@@ -12,6 +12,8 @@ services:
     # are mapped to port 8000 on our container
     ports:
       - "5000:5000"
+    restart:
+      on-failure
 
   nginx: 
     # Since our Dockerfile for web-server is located in react-app foler, our build context is ./react-app
@@ -19,3 +21,6 @@ services:
     container_name: nginx
     ports:
       - "3000:3000"
+    # Networks
+    restart:
+      on-failure

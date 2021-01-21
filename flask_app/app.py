@@ -4,12 +4,13 @@ import json
 
 from fct.get_regions import get_regions
 from fct.get_namestat import get_namestat
+from fct.get_malha import get_malha
 
 app = Flask(__name__)
 
 @app.route('/')
 def get():
-    return 'hell'
+    return 'hellooo'
 
 @app.route('/get/regions/<uf>') # Route to get a json with mun, micro, meso
 def req_regions(uf):
@@ -45,6 +46,14 @@ def req_mun(uf):
 def req_namestat(nome):
     try:
         return jsonify(get_namestat(nome))
+    except:
+        return jsonify({'Error': 'Something wrong with the api call'})
+
+
+@app.route('/malha/<cd>') # Route to get the malha
+def req_malha(cd):
+    try:
+        return get_malha(cd)
     except:
         return jsonify({'Error': 'Something wrong with the api call'})
 

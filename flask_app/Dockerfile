@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 COPY ./ ./
 
 # exposing port 8000 on container
-# EXPOSE 8000
+EXPOSE 5000
 
 # serving flask backend server
 CMD [ "python", "app.py" ]

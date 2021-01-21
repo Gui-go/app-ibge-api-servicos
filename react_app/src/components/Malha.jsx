@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from 'reactstrap';
 
-import { cleantxt } from "../fct/cleantxt.js"
-
-export default function NameStat() {
+export default function Malha() {
 
     const [query, setQuery] = useState('');
 
@@ -14,12 +12,11 @@ export default function NameStat() {
         setQuery(inputText)
     }
 
-    // eslint-disable-next-line 
-    const [namestat, setNamestat] = useState([])
+    const [malha, setMalha] = useState([])
     useEffect(() => {
-        fetch(`/namestat/${query}`).then(response =>
+        fetch(`/malha/${query}`).then(response =>
             response.json().then(data => {
-                // setNamestat(data);
+                setMalha(data);
                 console.log(data);
             })
         );
@@ -32,14 +29,11 @@ export default function NameStat() {
                     <br />
                     <br />
                     <br />
-                    <h3>Namestat</h3>
+                    <h3>Malha</h3>
                     <input ref={inputRef} />
                     <button onClick={updateQuery}>Click</button>
                     <br />
-                    <h2>{ typeof namestat }</h2>
-                    <ul>
-                        {namestat.map(m => <li id={cleantxt(m)}>{m}</li>)}
-                    </ul>
+                    <h2>{ typeof malha }</h2>
                 </Col>
             </Row>
         </Container>
